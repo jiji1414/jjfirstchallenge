@@ -11,12 +11,13 @@ This project is a simple web application that generates random lottery numbers. 
 *   Generates 1 bonus number.
 *   Displays the numbers in a visually appealing way.
 *   Allows the user to generate new numbers with a button click.
+*   **Dark Mode / Light Mode support:** Toggle between themes with preference persistence.
 
 ## File Structure
 
-*   `index.html`: The main HTML file.
-*   `style.css`: The CSS file for styling.
-*   `main.js`: The JavaScript file for the application logic.
+*   `index.html`: The main HTML file with theme toggle UI.
+*   `style.css`: The CSS file using CSS variables for theming.
+*   `main.js`: The JavaScript file for the application logic and theme switching.
 
 ## Plan
 
@@ -25,12 +26,16 @@ This project is a simple web application that generates random lottery numbers. 
     *   Add a title.
     *   Add a container for the lottery numbers.
     *   Add a button to generate new numbers.
+    *   Add a theme toggle button.
 2.  **Style the application:**
     *   Create a visually appealing layout.
     *   Style the lottery numbers to look like lottery balls.
     *   Add hover effects and animations.
+    *   Implement CSS variables for background colors, text colors, and shadows.
+    *   Define a `[data-theme="dark"]` selector for the dark mode palette.
 3.  **Implement the JavaScript logic:**
     *   Create a function to generate unique random numbers.
     *   Add an event listener to the button to call the generation function.
     *   Display the generated numbers on the screen.
-    *   Use a web component for the lottery balls for better encapsulation.
+    *   Implement theme switching logic using `localStorage` to remember user preference.
+
